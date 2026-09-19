@@ -1,0 +1,40 @@
+<svg fill="none" viewBox="0 0 800 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #0a0a0a; }
+    .border { stroke: #ef4444; stroke-width: 1.5; stroke-dasharray: 4 2; opacity: 0.4; }
+    .accent-glow { filter: blur(40px); opacity: 0.25; }
+    .title { font-family: 'Fira Code', 'Segoe UI', Monospace, sans-serif; font-weight: 800; font-size: 38px; fill: #ffffff; letter-spacing: 3px; }
+    .title-red { fill: #ef4444; }
+    .subtitle { font-family: 'Fira Code', 'Segoe UI', Monospace, sans-serif; font-weight: 500; font-size: 16px; fill: #9ca3af; letter-spacing: 1.5px; }
+    .tag { font-family: 'Fira Code', 'Segoe UI', Monospace, sans-serif; font-weight: 600; font-size: 13px; fill: #ef4444; }
+    .grid { stroke: #1f2937; stroke-width: 0.5; opacity: 0.3; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="200" rx="12" class="bg" />
+
+  <!-- Background Grid -->
+  <g class="grid">
+    <path d="M0 40 H800 M0 80 H800 M0 120 H800 M0 160 H800" />
+    <path d="M100 0 V200 M200 0 V200 M300 0 V200 M400 0 V200 M500 0 V200 M600 0 V200 M700 0 V200" />
+  </g>
+
+  <!-- Red Glow Accent -->
+  <circle cx="400" cy="100" r="120" fill="#ef4444" class="accent-glow" />
+
+  <!-- Border Frame -->
+  <rect x="10" y="10" width="780" height="180" rx="8" class="border" />
+
+  <!-- Content -->
+  <g transform="translate(400, 100)" text-anchor="middle">
+    <!-- Top Tag -->
+    <text y="-45" class="tag">&lt; WELCOME TO MY REPOSITORY /&gt;</text>
+    
+    <!-- Main Name -->
+    <text y="5" class="title">LOGESHWARAN <tspan class="title-red">V</tspan></text>
+    
+    <!-- Subtitle -->
+    <text y="42" class="subtitle">B.Tech IT Student @ Sona College of Technology</text>
+    <text y="65" class="subtitle" font-size="13px" fill="#ef4444">Aspiring Software Development Engineer</text>
+  </g>
+</svg>
